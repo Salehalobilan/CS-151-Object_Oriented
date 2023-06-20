@@ -1,0 +1,24 @@
+package Lab07;
+public class Author 
+{
+   private final String name;
+   private final String email;
+
+   public Author(String name, String email) {
+      this.name = name;
+      this.email = email;
+   }
+
+   public String getName() {
+      return name;
+   }
+
+   public String getEmail() {
+      return email;
+   }
+
+   @Override
+   public String toString(){
+      return String.format("%s <%s>", getName(), getEmail());
+   }
+}
